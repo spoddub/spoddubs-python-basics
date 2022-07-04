@@ -1,5 +1,5 @@
 # my first kinda program on python
-# lets tell user how many days in month of their choice
+# tells user how many days in month of their choice
 user_input = input("please enter month number: ")
 month = int(user_input)
 if month == 1:
