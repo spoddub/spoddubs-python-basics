@@ -1,8 +1,8 @@
-from math import *
 n = int(input())
-total = 1
+result = 0
 for i in range(1, n + 1):
-    total *= i
-print(total)
-
-
+    if i % 2 == 0:
+        result -= i
+    if i % 2 != 0:
+        result += i
+print(result)
