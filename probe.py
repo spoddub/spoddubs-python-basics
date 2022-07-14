@@ -1,3 +1,4 @@
 n = int(input())
 for i in range(n):
-    print(n, n, n)
+    for j in range(5):
+        print(i, end=' ')
