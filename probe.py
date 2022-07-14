@@ -1,5 +1,5 @@
-num = int(input())
-for i in range(num):
-    for j in range(min(i + 1, num - i)):
-        print('*', end='')
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(i):
+        print(i, end='')
     print()
