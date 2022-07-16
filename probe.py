@@ -1,5 +1,6 @@
 s = input()
-if s == s.title():
+s1 = s.lower()
+if 'хорош' in s1:
     print('YES')
 else:
     print('NO')
