@@ -1,5 +1,9 @@
 s = input()
-if s[::] == s[::-1]:
-    print('YES')
-else:
-    print('NO')
+print(len(s))
+print(s * 3)
+print(s[0])
+print(s[0:3])
+print(s[-3:])
+print(s[::-1])
+print(s[1:26])
+
