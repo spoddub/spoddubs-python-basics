@@ -1,10 +1,8 @@
-s = int(input())
-total = 0
-for i in s:
-    s1 = input()
-    if '11' in s1:
-        total += 1
-print(total)
+s = input()
+if s.endswith('.ru') or s.endswith('.com'):
+    print('YES')
+else:
+    print('NO')
 
 
 
