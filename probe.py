@@ -1,5 +1,6 @@
-for i in range(int(input()), int(input())):
-    print(chr(i))
+s = input()
+for i in range(int(len(s))):
+    print(ord(i), end=' ')
 
 
 
