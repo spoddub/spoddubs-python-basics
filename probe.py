@@ -1,8 +1,11 @@
 s = input()
-if s.endswith('.ru') or s.endswith('.com'):
-    print('YES')
-else:
-    print('NO')
+count = 0
+letter = 0
+for i in s:
+    if s.count(i) >= count:
+        count = s.count(i)
+        letter = i
+print(i)
 
 
 
