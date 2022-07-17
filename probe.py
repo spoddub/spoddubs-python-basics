@@ -1,6 +1,15 @@
 n = int(input())
-abc = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-print(abc[: n])
+my_list = []
+for c in range(n + 1):
+    my_list = []
+    new = input()
+    my_list = my_list.extend(new)
+print(my_list)
+
+
+
+
+
 
 
 
