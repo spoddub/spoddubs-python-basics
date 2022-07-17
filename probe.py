@@ -1,11 +1,7 @@
-n = int(input())
 my_list = []
-for c in range(n + 1):
-    my_list = []
-    new = input()
-    my_list = my_list.extend(new)
+for i in range(26):
+    my_list.append(chr(ord('a') + i) * (i + 1))
 print(my_list)
-
 
 
 
