@@ -1,14 +1,12 @@
 n = int(input())
 my_list = []
 for _ in range(n):
-    m = input()
-    if m not in my_list:
-        my_list.append(m)
-    else:
-        continue
-print(*my_list, sep='\n')
-
-
+    stroka = input()
+    my_list.append(stroka)
+k = input()
+for searchies in my_list:
+    if k in searchies or k.title() in searchies or k.swapcase() in searchies:
+        print(searchies)
 
 
 
