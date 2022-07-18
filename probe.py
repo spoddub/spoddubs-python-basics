@@ -1,10 +1,10 @@
-n, a = int(input()), int(input())
+n = int(input())
 my_list = []
-for _ in range(n - 1):
-    b = int(input())
-    my_list.append(a + b)
-    a = b
+for i in range(n):
+    my_list.append(i)
+del my_list[1:2]
 print(my_list)
+
 
 
 
