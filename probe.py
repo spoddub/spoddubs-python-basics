@@ -1,9 +1,11 @@
 n = int(input())
 my_list = []
-for i in range(n):
-    my_list.append(i)
-del my_list[1:2]
+for _ in range(n):
+    stroka = input()
+    my_list.extend(stroka)
 print(my_list)
+
+
 
 
 
