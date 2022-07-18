@@ -1,15 +1,18 @@
 n = int(input())
-my_list = []
+Negatives = []
+Zeros = []
+Positives = []
 for _ in range(n):
-    m = input()
-    my_list.append(m)
-k = int(input())
-new_list = []
-for i in range(k):
-    stroka = input().lower()
-    if stroka in my_list.lower:
-        new_list.append(stroka)
-    
+    m = int(input())
+    if m > 0:
+        Positives.append(m)
+    elif m == 0:
+        Zeros.append(m)
+    else:
+        Negatives.append(m)
+print(*Negatives, sep='\n')
+print(*Zeros, sep='\n')
+print(*Positives, sep='\n')
 
 
 
