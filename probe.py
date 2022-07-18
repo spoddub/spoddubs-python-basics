@@ -1,9 +1,12 @@
-n = int(input())
+n, a = int(input()), int(input())
 my_list = []
-for i in range(1, n + 1):
-    if n % i == 0:
-        my_list.append(i)
+for _ in range(n - 1):
+    b = int(input())
+    my_list.append(a + b)
+    a = b
 print(my_list)
+
+
 
 
 
