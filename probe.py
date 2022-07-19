@@ -1,7 +1,10 @@
 s = input()
 numbers = s.split()
 for i in numbers:
-    print(int(i) * '+')
+    if int(i) > 255:
+        print('NO')
+    else:
+        print('YES')
 
 
 
