@@ -1,7 +1,9 @@
 s = input()
 words = s.split()
-print(words, sep='\n')
-
+new_words = []
+for i in words:
+    new_words.append(i[0])
+print(*new_words, sep='.')
 
 
 
