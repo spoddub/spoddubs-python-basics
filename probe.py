@@ -1,7 +1,12 @@
-def print_fio(name, surname, patronymic):
-    print(name[0], surname[0], patronymic[0])
-name, surname, patronymic = input().upper(), input().upper(), input().upper()
-print_fio(name, surname, patronymic)
+def print_digit_sum(n):
+    c = 0
+    while n != 0:
+        b = n % 10
+        c += b
+        n = n // 10
+    print(c)
+n = int(input())
+print_digit_sum(n)
 
 
 
