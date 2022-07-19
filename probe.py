@@ -1,6 +1,10 @@
-s = [i ** 2 for i in range(1, int(input()) + 1)]
-print(*s, sep='\n')
-
+s = input()
+numbers = s.split()
+new_numbers = []
+for i in numbers:
+    x = int(i) ** 3
+    new_numbers.append(x)
+print(*new_numbers)
 
 
 
