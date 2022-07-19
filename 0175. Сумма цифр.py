@@ -6,5 +6,7 @@ def print_digit_sum(n):
         c += b
         n = n // 10
     print(c)
+
 n = int(input())
+
 print_digit_sum(n)
