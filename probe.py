@@ -1,9 +1,7 @@
-def draw_box():
-    print('*' * 10)
-    for i in range(12):
-        print('*', ' ' * 6, '*')
-    print('*' * 10)
-draw_box()
+def draw_triangle():
+    for i in range(1, 11):
+        print('*' * i)
+draw_triangle()
 
 
 
