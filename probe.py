@@ -1,9 +1,7 @@
 s = input()
-words = s.split()
-new_words = []
-for i in words:
-    new_words.append(i[0])
-print(*new_words, sep='.')
+numbers = s.split()
+for i in numbers:
+    print(int(i) * '+')
 
 
 
