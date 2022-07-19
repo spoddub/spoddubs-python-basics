@@ -1,6 +1,7 @@
-def draw_triangle():
-    for i in range(1, 11):
-        print('*' * i)
+def draw_triangle(fill, base):
+    print(fill * base)
+fill = input()
+base = int(input())
 draw_triangle()
 
 
