@@ -1,13 +1,7 @@
-def print_digit_sum(n):
-    c = 0
-    while n != 0:
-        b = n % 10
-        c += b
-        n = n // 10
-    print(c)
-n = int(input())
-print_digit_sum(n)
-
+def convert_to_miles(km):
+    return km * 0.6214
+num = int(input())
+print(convert_to_miles(num))
 
 
 
