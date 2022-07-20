@@ -1,16 +1,14 @@
-def is_valid_triangle(side1, side2, side3):
-    if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
-        return True
-    else:
+def is_prime(num):
+    if num == 1:
         return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    else:
+        return True
 
-a, b, c = int(input()), int(input()), int(input())
+# считываем данные
+n = int(input())
 
-print(is_valid_triangle(a, b, c))
-
-
-
-
-
-
-
+# вызываем функцию
+print(is_prime(n))
