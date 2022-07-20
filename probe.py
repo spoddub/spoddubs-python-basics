@@ -1,14 +1,10 @@
-def is_prime(num):
-    if num == 1:
-        return False
+def get_next_prime(num):
+    num += 1
     for i in range(2, num):
         if num % i == 0:
-            return False
-    else:
-        return True
+            return get_next_prime(num)
+    return num
 
-# считываем данные
 n = int(input())
 
-# вызываем функцию
-print(is_prime(n))
+print(get_next_prime(n))
