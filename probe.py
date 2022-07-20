@@ -1,14 +1,10 @@
-def find_all(target, symbol):
-    li = []
-    for i in range(len(target)):
-        if target[i] == symbol:
-            li.append(i)
-    return li
+def merge(list1, list2):
+    return sorted(list1 + list2)
 
-s = input()
-char = input()
+numbers1 = [int(c) for c in input().split()]
+numbers2 = [int(c) for c in input().split()]
 
-print(find_all(s, char))
+print(merge(numbers1, numbers2))
 
 
 
