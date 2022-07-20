@@ -1,20 +1,23 @@
-def is_password_good(password):
-    if len(password) < 8:
+# объявление функции
+def is_one_away(word1, word2):
+    if len(word1) == len(word2):
+        counter = 0
+        for i in range(len(word1)):
+            if word1[i] != word2[i]:
+                counter += 1
+        if counter == 0 or counter >= 2:
+            return False
+        else:
+            return True
+    else:
         return False
-    digit_flag = False
-    upper_flag = False
-    lower_flag = False
-    for i in password:
-        if i.isdigit():
-            digit_flag = True
-        elif i.isupper():
-            upper_flag = True
-        elif i.islower():
-            lower_flag = True
-    return digit_flag and upper_flag and lower_flag
+
+
+
 
 # считываем данные
-txt = input()
+txt1 = input()
+txt2 = input()
 
 # вызываем функцию
-print(is_password_good(txt))
+print(is_one_away(txt1, txt2))
