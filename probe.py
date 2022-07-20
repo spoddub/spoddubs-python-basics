@@ -1,11 +1,10 @@
-# объявление функции
-def is_correct_bracket(text):
-    while '()' in text:
-        text.replace('()', '')
-    return text == ''
+def convert_to_python_case(text):
+    s = ''
+    for el in text:
+        if el.isupper():
+            s += '_'
+        s += el.lower()
+    return s[1:]
 
-# считываем данные
-txt = input()
 
-# вызываем функцию
-print(is_correct_bracket(txt))
+print(convert_to_python_case(input()))
