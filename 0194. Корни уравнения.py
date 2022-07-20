@@ -12,7 +12,7 @@ def solve(a, b, c):
         x2 = ((-b - sqrt(d)) / (2 * a))
         return min(x1, x2), max(x1, x2)
     elif d == 0:
-        return -b / (2 * a)
+        return -b / (2 * a), -b / (2 * a)
 
 # считываем данные
 a, b, c = int(input()), int(input()), int(input())
