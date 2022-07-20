@@ -1,25 +1,12 @@
-def quick_merge(lst1, lst2):
-    res = []
-    p1, p2 = 0, 0
-    while p1 < len(lst1) and p2 < len(lst2):
-        if lst1[p1] < lst2[p2]:
-            res.append(lst1[p1])
-            p1 += 1
-        else:
-            res.append(lst2[p2])
-            p2 += 1
-    if p1 == len(lst1):
-        res += lst2[p2:]
+def is_valid_triangle(side1, side2, side3):
+    if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
+        return True
     else:
-        res += lst1[p1:]
-    return res
+        return False
 
+a, b, c = int(input()), int(input()), int(input())
 
-res = []
-for _ in range(int(input())):
-    num = [int(c) for c in input().split()]
-    res = quick_merge(res, num)
-print(*res)
+print(is_valid_triangle(a, b, c))
 
 
 
